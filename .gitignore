@@ -1,0 +1,83 @@
+# .gitignore
+
+*.tmp
+.builds
+*.bak
+*.scc
+*.diff
+*.err
+*.orig
+*.log
+*.swp
+*.vi
+*~
+*.sass-cache
+.tmp
+~$*
+
+# Ignore compressed/packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Ignore local node modules from npm
+node_modules
+_bower_components
+jspm_packages
+
+
+# due to build transpiling
+lib
+dist
+_dist
+.dist
+output
+serve
+prod
+serve
+_site
+_deploy
+_archive
+archive
+_scratch
+scratch
+workspace
+npm-debug.log
+
+
+# OSX
+._*
+.AppleDouble
+.DS_Store
+.localized
+.LSOverride
+.Spotlight-V101
+.Trashes
+Icon
+.eprj
+
+# Tags
+# Ignore tags created by etags and ctags
+TAGS
+tags
+
+# Folders to ignore
+.hg
+.svn
+.CVS
+intermediate
+publish
+
+# JetBrains IDE and related
+.idea
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+*.sublime-projectcompletions
+
