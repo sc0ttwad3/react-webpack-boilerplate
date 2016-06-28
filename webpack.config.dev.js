@@ -40,7 +40,7 @@ module.exports = {
 
     loaders: [
       {
-        test: /\.jsx?$/,
+        test: /(\.jsx|\.js)$/,
         loaders: ['babel?cacheDirectory'],
         include: APP
       }

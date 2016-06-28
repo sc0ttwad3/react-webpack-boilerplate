@@ -37,6 +37,8 @@
     "webpack-validator": "^2.2.0"
   },
   "dependencies": {
-    "lodash-fp": "^0.10.4"
+    "lodash-fp": "^0.10.4",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
   }
 }

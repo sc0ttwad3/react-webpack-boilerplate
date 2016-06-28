@@ -48,7 +48,7 @@ _scratch
 scratch
 workspace
 npm-debug.log
-
+.eslintcache
 
 # OSX
 ._*
