@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:prod": "webpack --config webpack.config.prod.js --progress",
     "lint:js": "eslint . --ext .js --ext .jsx --cache",
     "lint:webpack": "webpack-validator webpack.config.dev.js",
     "lint": "parallelshell \"npm run lint:js\" \"npm run lint:webpack\"",
