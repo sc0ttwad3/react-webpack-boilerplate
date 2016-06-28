@@ -10,6 +10,7 @@ module.exports = {
   devtool: 'eval-source-map',
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
+    'webpack/hot/only-dev-server',
     './src/index'
   ],
   output: {
@@ -18,7 +19,7 @@ module.exports = {
     publicPath: '/scripts/'
   },
   plugins: [
-
+    new webpack.HotModuleReplacementPlugin()
   ],
 
   // loaders for processing different file types
@@ -41,7 +42,10 @@ module.exports = {
     loaders: [
       {
         test: /(\.jsx|\.js)$/,
-        loaders: ['babel?cacheDirectory'],
+        loaders: [
+          'react-hot',
+          'babel?cacheDirectory'
+        ],
         include: APP
       }
     ]
