@@ -4,6 +4,6 @@ import React from 'react';
 
 export default class App extends React.Component {
   render() {
-    return <p>Hello My React and React-DOM!</p>
+    return <p>Hello --XXX-- React and React-DOM!</p>
   }
 }

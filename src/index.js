@@ -8,4 +8,4 @@ import App from './App';
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // Verify ES2016
-console.log(`2 + 5 is ${2+5}`);
+console.log(`2 + 4 is ${2+4}`);

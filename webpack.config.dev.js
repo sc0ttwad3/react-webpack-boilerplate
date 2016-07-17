@@ -36,7 +36,10 @@ const config = {
     // BrowserSync options
       host: HOST,
       port: PORT,
-      proxy: PROXY
+      proxy: PROXY,
+      logPrefix: 'react-webpack-starter',
+      logLevel: 'info',
+      browser: 'chrome'
     },
     // plugin options
     {
