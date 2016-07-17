@@ -14,6 +14,15 @@
 &nbsp; &nbsp; ✓ Bundling and optimization with [Webpack](http://webpack.github.io/)<br>
 &nbsp; &nbsp; ✓ [Code-splitting](https://github.com/webpack/docs/wiki/code-splitting) and async chunk loading<br>
 
+### Research Notes   
+[PostCSS](https://www.sitepoint.com/an-introduction-to-postcss/)<br />
+[PostCSS-loader](https://github.com/postcss/postcss-loader)<br />
+[NPM as build tool](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/)<br />
+[NPM as task runner](https://www.smashingmagazine.com/2016/06/harness-machines-productive-task-runners/) <br />
+[Fetch API](https://www.sitepoint.com/introduction-to-the-fetch-api/) <br />
+[CSS and FrontEnd Tips](https://speakerdeck.com/smashingmag/dirty-tricks-from-the-dark-corners-of-front-end) <br />
+[WebpackBin](http://www.webpackbin.com/) <br />
+
 
 ### Directory Layout
 
