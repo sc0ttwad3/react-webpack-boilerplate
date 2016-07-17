@@ -12,14 +12,15 @@ const PORT = process.env.PORT || 3000;
 const PROXY = `http://${HOST}:${PORT}`;
 
 const config = {
-  entry: {
-    app: APP
-  },
-//  [
-//    'webpack-dev-server/client?http://localhost:30//00',
-//    'webpack/hot/only-dev-server',
-//    './src/index'
-//  ],
+  entry:
+//  {
+//    app: APP
+//  },
+  [
+    'webpack-dev-server/client?http://localhost:3000',
+    'webpack/hot/only-dev-server',
+    './src/index'
+  ],
   output: {
     path: BUILD,
     filename: 'bundle.js',
