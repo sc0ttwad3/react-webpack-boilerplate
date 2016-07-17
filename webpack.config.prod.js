@@ -58,6 +58,6 @@ const config = {
 
 module.exports = validate(config, {
   rules: {
-    'no-root-files-node-modules-nameclash': false,
-  },
+    'no-root-files-node-modules-nameclash': false
+  }
 });
