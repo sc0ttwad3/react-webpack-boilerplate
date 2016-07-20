@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:js": "babel src --ignore *_tests.js,*_tests-helper.js --out-dir lib --source-maps",
     "build:prod": "webpack --config webpack.config.prod.js --progress",
     "build:dev": "webpack --config webpack.config.dev.js --progress",
     "lint:js": "eslint . --ext .js --ext .jsx --cache",
@@ -14,6 +15,7 @@
   "author": "Scott Wade",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^6.3.7",
     "babel": "^6.5.2",
     "babel-cli": "^6.10.1",
     "babel-core": "^6.9.1",
