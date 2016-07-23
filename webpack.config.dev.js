@@ -23,6 +23,7 @@ const config = {
   ],
   output: {
     path: BUILD,
+    pathinfo: true,
     filename: 'bundle.js',
     publicPath: '/scripts/'
   },
