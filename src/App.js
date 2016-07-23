@@ -1,9 +1,18 @@
 // App.js
 
-import React from 'react';
+import React, {Component} from 'react';
 
-export default class App extends React.Component {
+export default class App extends Component {
   render() {
-    return <p>Hello --XXX-- React and React-DOM!</p>
+    return (
+      <div className="App">
+        <div className="App-header">
+          <h2>The - react-webpack-boilerplate - Starter Kit</h2>
+        </div>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+      </div>
+    );
   }
 }
