@@ -75,7 +75,28 @@ const config = {
           'babel?cacheDirectory'
         ],
         include: APP
-      }
+      },
+      {
+        test: /\.css$/,
+        include: APP,
+        loader: 'style!css!postcss'
+      },
+      {
+        test: /\.json$/,
+        include: APP,
+        loaders: [
+          'react-hot',
+          'json'
+        ]
+      },
+      {
+        test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)(\?.*)?$/,
+        include: APP,
+        loaders: [
+          'react-hot',
+          'file?static/media/[name].[ext]'
+        ]
+      },
     ]
   }
 };
