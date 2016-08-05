@@ -8,7 +8,7 @@ import App from './App';
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // Verify ES2016
-console.log(`2 + 8 is ${2+8}`);
+console.log(`2 + 18 is ${2+18}`);
 console.log('Hello... it\'s ' + moment().format('h:mm:ss a') + '!');
 let current = moment().format('h:mm:ss a')
 console.log(`Hello... it\'s ${current}!`);

@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "66f9e9b96d08d68c9900"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a5ae24ba3c1ca7f8e9ee"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -11967,7 +11967,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".App {\n  text-align: center;\n}\n\n.App-logo {\n  animation: App-logo-spin infinite 20s linear;\n  height: 80px;\n}\n\n.App-header {\n  background-color: #222;\n  height: 150px;\n  padding: 20px;\n  color: white;\n}\n\n.App-intro {\n  font-size: large;\n}\n\n@keyframes App-logo-spin {\n  from { transform: rotate(0deg); }\n  to { transform: rotate(360deg); }\n}\n", ""]);
+	exports.push([module.id, ".App {\n  text-align: center;\n}\n\n.App-logo {\n  -webkit-animation: App-logo-spin infinite 20s linear;\n          animation: App-logo-spin infinite 20s linear;\n  height: 80px;\n}\n\n.App-header {\n  background-color: #222;\n  height: 150px;\n  padding: 20px;\n  color: white;\n}\n\n.App-intro {\n  font-size: large;\n}\n\n@-webkit-keyframes App-logo-spin {\n  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\n  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}\n\n@keyframes App-logo-spin {\n  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\n  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}\n", ""]);
 	
 	// exports
 
@@ -33160,6 +33160,11 @@
 	          )
 	        ),
 	        _react2.default.createElement(
+	          'h4',
+	          null,
+	          'h4:Pre App-intro'
+	        ),
+	        _react2.default.createElement(
 	          'p',
 	          { className: 'App-intro' },
 	          'To get started, edit ',
@@ -33213,7 +33218,7 @@
 	_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('root'));
 	
 	// Verify ES2016
-	console.log('2 + 8 is ' + (2 + 8));
+	console.log('2 + 18 is ' + (2 + 18));
 	console.log('Hello... it\'s ' + (0, _moment2.default)().format('h:mm:ss a') + '!');
 	var current = (0, _moment2.default)().format('h:mm:ss a');
 	console.log('Hello... it\'s ' + current + '!');
