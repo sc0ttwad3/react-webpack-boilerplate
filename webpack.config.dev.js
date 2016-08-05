@@ -5,17 +5,21 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 const APP = path.join(__dirname, 'src');
 const BUILD = path.join(__dirname, 'build');
+const buildd = path.resolve(process.cwd(), './build');
 const LINT = path.join(__dirname, '.eslintrc');
 
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 3000;
 const PROXY = `http://${HOST}:${PORT}`;
 
+const pkg = require(path.resolve(process.cwd(), './package.json'));
+const debug = process.env.NODE_ENV === 'development';
+const verbose = process.env.VERBOSE === 'true';
+const hmr = process.env.HMR === 'true'
+
 const config = {
+  context: process.cwd(),
   entry:
-//  {
-//    app: APP
-//  },
   [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
@@ -30,8 +34,30 @@ const config = {
   resolve: {
     extensions: ['', '.js', '.jsx', '.css', '.svg']
   },
-  devtool: 'eval-source-map',
+  // Switch loaders to debug or release mode
+  debug,
+  // Developer tool to enhance debugging, source maps
+  // http://webpack.github.io/docs/configuration.html#devtool
+  devtool: debug ? 'source-map' : false,
+  //devtool: 'eval-source-map',
+  stats: {
+    colors: true,
+    reasons: debug,
+    hash: verbose,
+    version: verbose,
+    timings: true,
+    chunks: verbose,
+    chunkModules: verbose,
+    cached: verbose,
+    cachedAssets: verbose,
+  },
   plugins: [
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': debug ? '"development"' : '"production"',
+      __DEV__: debug,
+    }),
+    new webpack.optimize.DedupePlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new BrowserSyncPlugin({
     // BrowserSync options
