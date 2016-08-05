@@ -6,7 +6,7 @@
   "scripts": {
     "build:js": "babel src --ignore *_tests.js,*_tests-helper.js --out-dir lib --source-maps",
     "build:prod": "webpack --config webpack.config.prod.js --progress",
-    "build:dev": "webpack --config webpack.config.dev.js --progress",
+    "build:dev": "webpack -d --config webpack.config.dev.js --progress",
     "lint:js": "eslint . --ext .js --ext .jsx --cache",
     "lint:webpack": "webpack-validator webpack.config.dev.js webpack.config.prod.js",
     "lint": "parallelshell \"npm run lint:js\" \"npm run lint:webpack\"",

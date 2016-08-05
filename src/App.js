@@ -10,7 +10,7 @@ export default class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>The - react-webpack-boilerplate - Starter Kit</h2>
+          <h2>react-webpack-boilerplate</h2>
         </div>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.

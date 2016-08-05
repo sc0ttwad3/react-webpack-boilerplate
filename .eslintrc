@@ -71,8 +71,8 @@
     "import/no-unresolved": 0,
     "import/named": 2,
     "import/namespace": 2,
-    "import/default": 1,
-    "import/export": 2,
+    "import/default": 0,
+    "import/export": 1,
 
 	"mocha/no-exclusive-tests": "error",
     "mocha/no-skipped-tests": 0,
@@ -96,30 +96,3 @@
     "__DEV__": true
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

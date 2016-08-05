@@ -28,7 +28,7 @@ const config = {
     publicPath: '/scripts/'
   },
   resolve: {
-    extensions: ['', '.js', '.jsx', '.css']
+    extensions: ['', '.js', '.jsx', '.css', '.svg']
   },
   devtool: 'eval-source-map',
   plugins: [
@@ -101,6 +101,7 @@ const config = {
   }
 };
 
+// Just real JS, so any valid code can go here!
 module.exports = validate(config, {
   rules: {
     'no-root-files-node-modules-nameclash': false
