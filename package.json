@@ -55,6 +55,7 @@
     "gzip-size": "^3.0.0",
     "html-webpack-plugin": "^2.22.0",
     "json-loader": "^0.5.4",
+    "moment": "^2.14.1",
     "opn": "^4.0.2",
     "parallelshell": "^2.0.0",
     "postcss": "^5.1.1",
